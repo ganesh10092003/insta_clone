@@ -242,6 +242,7 @@ body{
 .accfollowing{
     color: rgb(61, 61, 61);
     font-weight: 550;
+    cursor: pointer;
 }
 .plus{
     color: gray;
@@ -335,10 +336,11 @@ body{
 .allposts{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     margin-top: 20px;
     grid-row-gap: 30px;
     grid-column-gap: 30px;
+    margin-bottom: 100px;
 }
 .eachpost{
     position: relative;
