@@ -1,0 +1,384 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #FDFAF6;
+}
+/*TODO --------------------SIDE MENU-------------------- */
+.sidemenu{
+    margin: 2px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 5px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    width: 260px;
+    background-color: white;
+    border-right: 1px solid #8080805c;
+}
+/** ----------INSTA ICON---------- */
+.logo{
+    /* border: 2px solid red; */
+    cursor: pointer;
+    height: 60px;
+    padding: 5px;
+    
+}
+.image{
+    /* display: inline; */
+    text-align: center;
+    vertical-align: middle;
+    height: 45px;
+    width: 170px;
+}
+/** ----------NAVIGATION BAR---------- */
+.navigation{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 60px 40px;
+    grid-row-gap: 8px;
+}
+.navs{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    justify-items: center;
+    align-items: center;
+}
+.icon_images{
+    text-align: center;
+    vertical-align: middle;
+    height: 25px;
+    width: 35px;
+}
+.icon_texts{
+    color: black;
+    text-decoration: none;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 20px;
+    align-self: center;
+    justify-self:left;
+    margin: 3px;
+}
+.navs:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 25px;
+}
+#search_icon{
+    height: 22px;
+    width: 25px;
+}
+#Explore_icon{
+    height: 29px;
+    width: 30px;
+}
+#Reels_icon{
+    height: 21px;
+    width: 23px;
+}
+#Messages_icon{
+    height: 29px;
+    width: 30px;
+}
+#notification_icon{
+    height: 22px;
+    width: 26px;
+}
+#Create_icon{
+    height: 21px;
+    width: 24px;
+}
+#profile_pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#more_icon{
+    height: 25px;
+    width: 25px;
+}
+
+/*TODO --------------------Profile Details-------------------- */
+.content{
+    position: absolute;
+    top: 0px;
+    left: 450px;
+}
+.profile_details{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 750px;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+}
+/** ----------Profile Pic---------- */
+.pic{
+    align-self: center;
+}
+#DP_details{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid #e33b5c;
+}
+/** ----------Account Details---------- */
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.account{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.username{
+    cursor: pointer;
+    font-size: 30px;
+    margin: 5px;
+}
+.but{
+    cursor: pointer;
+    color: white;
+    margin: 5px;
+    background-color: #0095f6;
+    border: none;
+    height: 35px;
+    width: 75px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+#follow_but{
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+#follow_but:hover{
+    background-color: #087ac6;
+}
+#msg_but{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #eae3d9;
+    color: black;
+    margin-left: 8px;
+}
+#msg_but:hover{
+    background-color: rgb(197, 194, 194);
+}
+#add_friend{
+    background-color: #eae3d9;
+    width: 40px;
+    margin-left: 8px;
+}
+#add_friend:hover{
+    background-color: rgb(197, 194, 194);
+}
+.friend{
+    height: 30px;
+    width: 30px;
+}
+#more_but{
+    background-color: #fdfaf6;
+    margin-left: 8px;
+    width: 40px;
+}
+.more{
+    width: 20px;
+    height: 20px;
+}
+/** ----------Followers Details---------- */
+.follow{
+    margin: 5px;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+}
+.count{
+    font-size: 18px;
+    margin: 10px;
+}
+#followers, #following{
+    cursor: pointer;
+}
+/** ----------About---------- */
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.abt_det{
+    font-size: 17px;
+    margin: 2px;
+    margin-left: 15px;
+}
+#name{
+    margin-top: 10px;
+}
+.site{
+    font-weight: 550;
+    text-decoration: none;
+    color: #4d4d93;
+}
+.site:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+#name{
+    font-size: 21px;
+    font-weight: 550;
+    opacity: 70%;
+}
+#tags{
+    color:#205686;
+    cursor: pointer;
+}
+#followed_by{
+    color: gray;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.accfollowing{
+    color: rgb(61, 61, 61);
+    font-weight: 550;
+}
+.plus{
+    color: gray;
+    font-weight: 550;
+}
+/** ----------STORIES---------- */
+.stories{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.story{
+    cursor: pointer;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+.img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 2.5px white,
+                0 0 0 2.5px gray;
+    height: 85px;
+    width: 85px;
+}
+.caption{
+    font-weight: 550;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+/** ----------HEADINGS---------- */
+.navsforposts{
+    border-top: 1px solid rgba(128, 128, 128, 0.273) ;
+    display: flex;
+    margin-top: 0px;
+    flex-direction: row;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.subpost{
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+#posts_nav{
+    height: 15px;
+    width: 15px;
+}
+.post{
+    text-align: center;
+    font-size: 13px;
+}
+
+#reel_nav{
+    margin-left: 30px;
+}
+.subreel{
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+#reels_nav{
+    height: 12px;
+    width: 12px;
+}
+.reel{
+    text-align: center;
+    font-size: 13px;
+}
+
+#tagged_nav{
+    margin-left: 30px;
+}
+#tag_nav{
+    height: 12px;
+    width: 12px;
+}
+.subtagged{
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.tagged{
+    text-align: center;
+    font-size: 13px;
+}
+/*todo --------------------POSTS-------------------- */
+.allposts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.eachpost{
+    position: relative;
+}
+.post_images{
+    height: 300px;
+    width: 300px;
+}
+#hovering{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+.eachpost:hover #hovering{
+    cursor: pointer;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.414);
+}
+.hovercontent{
+    margin-top: 130px;
+    text-align: center;
+    vertical-align: middle;
+}
+.likehover{
+    height: 22px;
+    width: 22px;
+}
+.lcount{
+    color: white;
+}
+.commentshover{
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+}
+.ccount{
+    color: white;
+}
